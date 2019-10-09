@@ -25,4 +25,33 @@ function totalCost(basePrice, sizingCost, crustCost, toppingsCost){
   
 }
 
-let anchovySuprise= new Pizza
+let anchovySuprise= new Pizza((name, basicPrice, size, sizingCost, crust, crustCost, toppingscost, totalCost)
+                             {anchovySuprise, 700, [small, medium, large], 1, flatbread, 200, Anchovy, 200, totalCost });
+                             
+let peperroniPleaser= new Pizza((name, basicPrice, size, sizingCost, crust, crustCost, toppingscost, totalCost)
+                                {});
+
+let hawaaianSpice= new Pizza((name, basicPrice, size, sizingCost, crust, crustCost, toppingscost, totalCost)
+                                {});
+
+let mushroomMix= new Pizza((name, basicPrice, size, sizingCost, crust, crustCost, toppingscost, totalCost)   
+                                {});
+
+let magheritaMedley= new Pizza((name, basicPrice, size, sizingCost, crust, crustCost, toppingscost, totalCost)
+                                {});
+
+let chickenLicken= new Pizza((name, basicPrice, size, sizingCost, crust, crustCost, toppingscost, totalCost)
+                                {});       
+                                
+let turkeyBbq= new Pizza((name, basicPrice, size, sizingCost, crust, crustCost, toppingscost, totalCost)
+                                {});
+
+let goudaIndulgence= new Pizza((name, basicPrice, size, sizingCost, crust, crustCost, toppingscost, totalCost)
+                                {});
+                                
+let vegeterianSuprise= new Pizza((name, basicPrice, size, sizingCost, crust, crustCost, toppingscost, totalCost)
+                                {});                               
+                                
+
+
+
