@@ -59,7 +59,7 @@ function crustCalcPrice(crust) {
     return crustPrice.gluten * 1;
   }
 }
-// price according to topping
+
 function toppingsCalcPrice(toppings) {
   var noOfTopping = 0;
   for (i = 0; i < toppings.length; i++) {
@@ -76,7 +76,7 @@ function toppingsCalcPrice(toppings) {
   return noOfTopping * 1;
 }
 
-//function check for an element in array
+
 function checkPepperoni(topping) {
   return topping === "pepperoni";
 }
