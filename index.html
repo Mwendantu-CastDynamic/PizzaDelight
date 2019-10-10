@@ -11,80 +11,247 @@
   <title>Pizza Delights</title>
 </head>
 <body>
+  <div class="main">
+  <a class="navbar-brand" href="#"><h2>Pizza <span> Delights</span></h2></a>
+  <h1 class="welcome">
+    Welcome to Pizza Delights, for the finest Pizza's in the City.
+  </h1>
+</div>
+<div id="works">
+  <h1 class="text-center">Here's how to enjoy Pizza Delight Pizza's</h1>
   <div class="container">
-  <header>
-
-  </header>
-    <div class="container">
-      <div class ="row">
-        <div class = "jumbotron">
-
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card">
-
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card">
-
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card">
-    
-
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card">
-
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card">
-
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card">
-
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card">
-
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
+    <div class="row">
+      <div class="col-md-4 mt-4 text-center">
         <div class="card">
-
+          <div class="card-title">
+            <h4>Step 1</h4>
+            <h4>Select Your Toppings and We'll create Your Pizza for You</h4>
+          </div>
+          <div class="card-body">
+            <p>From the comfort of our Website, you can now choose the type of pizza you want</p>
+          </div>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 mt-4 text-center">
         <div class="card">
-
+          <div class="card-title">
+            <h4>Step 2</h4>
+            <h4>Add Pizza(s) to Cart, Checkout and Complete Payment</h4>
+          </div>
+          <div class="card-body">
+            <p>
+             Simply add all the Pizza's you'd like into the Cart,
+             Check Out, complete the Payment Process and Confirm Transaction Success!
+            </p>
+          </div>
         </div>
       </div>
-    
+      <div class="col-md-4 mt-4 text-center">
+        <div class="card">
+          <div class="card-title">
+            <h4>Step 3</h4>
+            <h4>Pick up your Pizza or await Pizza delivery Right to your location</h4>
+            </div>
+          <div class="card-body">
+            <p>
+              Your Pizza Order is ready for you to enjoy in only 20 minutes from when your order is confirmed
+              and it can now be delivered to you, direct to your location anywhere within a 10km radius from our location
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-  
-
-
 </div>
+<div id="order"></div>
+<div class="order mt-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div id="order-section"></div>
+        <h1 class="text-center pt-4">Pizza Orders Section</h1>
+        <h2 class="text-center pt-4">Place Your Order Here</h2><br>
+        <div class="alert alert-success mt-2" id="success">
+          <strong>Transaction Successful!</strong> We shall deliver your order to your
+          location in
+          <span style="color: rgb(15, 100, 33); font-size:18px" id="place" style="color: rgb(15, 100, 33)"></span> the
+          delivery fee is ksh 200. The Cost Payable is ksh: <span id="finalprice" style="color: rgb(15, 100, 33)"></span>. Thank you for shopping with us.
+        </div>
+        <div class="alert alert-success" id="no-delivery">
+            <strong>Transaction Successful!</strong> We shall be eagerly waiting for you to pick your order. The Cost Payable is ksh <span id="no-location" style="color: red"></span> Thank you for shopping with us.
+          </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card">
+              <card-title>
+                <h3 class="pt-4 pl-5">Create Your Pizza According to Your Preferences</h3>
+              </card-title>
+              <div class="card-body">
+                <div id="pizza">
+                  <img class="pl-5" src="./assets/pizza1.jpeg" alt="" />
+                </div>
+                <form id="myform">
+                  <div class="form-group">
+                    <label for="pizza-size">Pizza Size Selection</label>
+                    <select class="form-control" id="pizza-size">
+                      <option value="small">Small -- ksh 500</option>
+                      <option value="medium">Medium -- ksh 800</option>
+                      <option value="large"> Large -- ksh 1100</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="pizza-crust">Your Preferred Crust Selection</label>
+                    <select class="form-control" id="pizza-crust">
+                      <option value="crispy">Crispy -- ksh 250</option>
+                      <option value="stuffed">Stuffed -- ksh 300</option>
+                      <option value="gluten-free">Gluten-free -- ksh 200</option>
+                    </select>
+                  </div>
+                  <p>Toppings</p>
+                  <div class="toppings">
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="inlineCheckbox1"
+                        value="pepperoni"
+                      />
+                      <label class="form-check-label" for="inlineCheckbox1"
+                        >Pepperoni ksh. 100</label
+                      >
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="inlineCheckbox2"
+                        value="cheeses"
+                      />
+                      <label class="form-check-label" for="inlineCheckbox2"
+                        >Cheeses ksh. 50</label
+                      >
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="inlineCheckbox2"
+                        value="turkey"
+                      />
+                      <label class="form-check-label" for="inlineCheckbox2"
+                        >Turkey ksh. 200</label
+                      >
+                    </div>
+                  </div>
+                  <button
+                    type="submit"
+                    class="btn-success btn mt-3"
+                    id="orderbtn">
+                    Add Item To Cart
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card mt-1">
+              <div class="card-title d-inline-flex">
+                <h3 class="p-4">Cart Items Counter</h3>
+                <i class="p-4 fa fa-shopping-cart total">
+                  <button
+                    class="btn-success btn ml-2"
+                    value="0"
+                    id="quantity">
+                    0
+                  </button></i>
+              </div>
+              <div class="card-body">
+                <table id="table">
+                  <tr>
+                    <td>Size</td>
+                    <td>Crust</td>
+                    <td>Toppings</td>
+                    <td>Total Cost</td>
+                  </tr>
+                </table>
+
+                <div id="cart">
+                  <img id="cart" src="./assets/cart.svg" alt="" />
+                  <p class="text-center pt-4">
+                    You haven't placed any item into the cart yet
+                  </p>
+                </div>
+
+                <div id="items"></div>
+                <a href="#order-section">
+                  <div class="checkout">
+                    <button
+                      class="btn-success btn m-4"
+                      data-toggle="modal"
+                      data-target="#exampleModalCenter"
+                      id="gettotal">
+                      Checkout
+                    </button>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div
+  class="modal fade"
+  id="exampleModalCenter"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="exampleModalCenterTitle"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLongTitle">
+          Cost Confirmation
+        </h3>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>
+          The Total Amount Payable for your order is ksh
+          <span id="money" style="color: rgb(15, 100, 33)"></span>
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button
+          type="button"
+          class="btn btn-secondary"
+          id="myModel"
+          data-dismiss="modal">
+          Confirm Checkout
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="contact-section"></div>
+<footer>
+  <div id="footer-text">
+    <h2 id="brand">Pizza <span> Delights</span></h2>
+  </div>
+</div>
+  </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="./js/main.js"></script>
 </body>
 </html>

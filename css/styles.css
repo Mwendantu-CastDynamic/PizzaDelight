@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+  background-image: url("/images/chorizo-and-mushroom-pizza-cooked-2.jpg");
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+i {
+  font-size: 24px;
+}
+.navbar-brand {
+  color: white
+}
+.navbar span {
+  color: #aa111e;
+}
+.navbar h2 {
+  color: white;
+}
+.main {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+}
+.welcome {
+  color: #ffffff;
+  text-align: center;
+  padding-top: 165px;
+  padding-bottom: 165px;
+  font-size: 50px;
+}
+/* #works h1 { */
+  color: #247a00;
+}
+
+#pizza img {
+  width: 90%;
+  height: 250px;
+}
+#fluid-border {
+  border: none;
+}
+#order {
+  padding-top: 50px;
+}
+#cart {
+  text-align: center;
+}
+footer {
+  height: 50vh;
+  margin-top: 50px;
+}
+#brand {
+  color: #aa111e;
+  padding: 50px 0 0 50px;
+}
+#brand span {
+  color: #aa111e;
+}
+.vertical {
+  border-left: 2px solid #ffffff;
+  position: absolute;
+  height: 45vh;
+  left: 50%;
+  margin-top: 20px;
+}
+#footer-text {
+  float: left;
+}
+footer p {
+  color: #ffffff;
+  padding: 30px 0 0 65px;
+}
+
+td {
+  padding: 8px 0 0 12px;
+}
+#table {
+  display: none;
+}
+td img {
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+  margin-left: 5px;
+}
+.total {
+  font-size: 34px;
+  color: #cf1923;
+}
+.checkout {
+  text-align: center;
+  display: none;
+}
+#success {
+  display: none;
+}
+#no-delivery {
+  display: none;
+}
+@media only screen and (max-width: 500px) {
+  .vertical {
+    display: none;
+  }
+}
