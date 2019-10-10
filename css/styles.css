@@ -15,40 +15,36 @@ background-repeat: no-repeat;
 background-position: center; 
 }
 
-/* .main { */
-  background-image: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.5)
-  ),url("/images/chorizo-and-mushroom-pizza-cooked-2.jpg");
-background-size: cover;
-background-repeat: no-repeat;
-background-position: center;  
 i {
   font-size: 24px;
 }
+
+.nt{
+  color:white;
+}
+}
 .navbar-brand {
-  color: white;
+  color: #d1babc;
 }
 .navbar span {
-  color: #aa111e;
+  color:white;
 }
 .navbar h2 {
-  color: white;
+  color:#d1babc;
 }
 
 .welcome {
-  color: #ffffff;
+  color: #d8d51d;
   text-align: center;
   padding-top: 165px;
   padding-bottom: 165px;
   font-size: 50px;
 }
 #works h1 {
-  color: #aa111e
+  color:whitesmoke;
 }
 .pl5{
-  width: 30%;
+  width: 40%;
   height:100px;
 }
 #pizza img {
@@ -69,11 +65,11 @@ footer {
   margin-top: 50px;
 }
 #brand {
-  color: #aa111e;
+  color: #d1babc;
   padding: 50px 0 0 50px;
 }
 #brand span {
-  color: #aa111e;
+  color: #d1babc;
 }
 .vertical {
   border-left: 2px solid #ffffff;
@@ -81,6 +77,10 @@ footer {
   height: 45vh;
   left: 50%;
   margin-top: 20px;
+}
+
+.os{
+  color:white;
 }
 #footer-text {
   float: left;
@@ -106,8 +106,9 @@ td img {
 }
 .total {
   font-size: 34px;
-  color: #cf1923;
+  color:rgb(15, 100, 33);
 }
+
 .checkout {
   text-align: center;
   display: none;
